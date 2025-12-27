@@ -29,6 +29,7 @@
   border-radius: 10px;
   padding: 0.6rem;
   line-height: 1;
+  height: max-content;
 }
 
 .footer-block__content h4 {
@@ -87,4 +88,12 @@
   text-align: center;
   padding: 1rem;
   font-size: 0.95rem;
+}
+.btn-register__icon-box{
+    display: flex;
+    height: 2.5rem 
+}
+.footer-brand {
+      display: flex;
+    justify-content: center;
 }

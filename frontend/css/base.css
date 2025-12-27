@@ -153,3 +153,107 @@ body {
     height: 220px;
   }
 }
+
+
+
+:root {
+  --nav-bg: #ffffff;
+  --stripe-bg: #2e1a5e; /* Deep purple from image */
+  --btn-blue: #1b1464;
+  --text-blue: #1b1464;
+}
+
+.header {
+  position: relative;
+  background-color: var(--nav-bg);
+  z-index: 1000;
+}
+
+.header__nav-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Pushes button to the right */
+  align-items: center;
+  height: 80px; /* Adjust based on your logo size */
+  position: relative;
+}
+
+/* LOGO OVERLAP EFFECT */
+.header__logo-link {
+  position: absolute;
+  left: 15px;
+  top: 10px; /* Makes it hang over the bottom bar */
+  z-index: 10;
+}
+
+.header__logo {
+  height: 120px; /* Large size to overlap the bottom stripe */
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+/* PURPLE BOTTOM STRIPE */
+/* .header__stripe-bar {
+  height: 40px;
+  background: var(--stripe-bg);
+  background-image: linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.05) 75%, transparent 75%, transparent);
+  background-size: 20px 20px;
+} */
+
+/* REGISTER BUTTON COMPONENT */
+.btn-register {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid var(--btn-blue);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.btn-register:hover {
+  transform: translateY(-2px);
+}
+
+.btn-register__icon {
+  background-color: var(--btn-blue);
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-register__text {
+  color: var(--text-blue);
+  padding: 0 20px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+
+.header__new_{
+    position: absolute !important;
+    width: -webkit-fill-available;
+}
+
+.btn__style{
+    background: #fff;
+    padding: 1px;
+    border-radius: 8px;
+}
+.btn__style_register__icon {
+    color: var(--btn-blue);
+    padding: 10px 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.btn__style_Arrow{
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--btn-blue);
+    padding-left: 0px;
+}

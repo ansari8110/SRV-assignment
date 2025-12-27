@@ -15,16 +15,34 @@
 
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
-
-<header class="header" role="banner">
+<!--  -->
+<header class="header header_static" role="banner">
   <nav class="header__nav" aria-label="Primary navigation">
-    <img src="assets/images/logo.svg" alt="Premier Schools Exhibition" class="header__logo" />
-    <button class="btn btn--primary">Register Now</button>
+    <img src="assets/images/logo.svg" alt="Premier Schools Exhibition" />
+   <button class="btn__style">
+      <div class="btn-register__icon-box">
+    <span class="btn__style_register__icon"> Register Now </span>
+    <span class="btn__style_register__icon btn__style_Arrow">→</span>
+  </div>
+    </button>
   </nav>
 </header>
 
-<main id="main">
+<main id="main">  
+<header class="header header__new_" role="banner">
+  <div class="container header__nav-wrapper">
+    <a href="/" class="header__logo-link">
+      <img src="assets/images/logo_scroll.svg" alt="Premier Schools Exhibition 22nd Edition" class="header__logo" />
+    </a>
 
+    <nav class="header__nav" aria-label="Primary navigation">
+      <a href="#register" class="btn-register">
+        <span class="btn-register__icon" aria-hidden="true">↗</span>
+        <span class="btn-register__text">REGISTER NOW</span>
+      </a>
+    </nav>
+  </div>
+</header>
 <!-- HERO SECTION -->
 <section class="hero" aria-roledescription="carousel">
   <div class="hero__track">
@@ -287,13 +305,12 @@
   </div>
 </section>
 
-</main>
   <footer class="site-footer" role="contentinfo">
   <div class="footer-top">
     <!-- Logo -->
     <div class="footer-brand">
       <img
-        src="assets/images/logo.svg"
+        src="assets/images/logo_scroll.svg"
         alt="Premier Schools Exhibition Logo"
         class="footer-brand__logo"
       />
@@ -356,6 +373,7 @@
     </p>
   </div>
 </footer>
+</main>
 
 <script src="js/hero-slider.js"></script>
 <script src="js/section-slider.js"></script>
