@@ -10,3 +10,127 @@ img {
   max-width: 100%;
   display: block;
 }
+
+
+/* Accessibility helper */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* ===== HERO BACKGROUND ===== */
+.blog-hero {
+  background: #fff;
+}
+
+.blog-hero__bg {
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 60%),
+    repeating-radial-gradient(circle at center, rgba(255,255,255,0.06) 0 2px, transparent 2px 16px),
+    linear-gradient(135deg, #050b3c, #4b1978);
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative dots (left) */
+.blog-hero__bg::before {
+  content: "";
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 60px;
+  height: 80px;
+  background:
+    radial-gradient(circle, #f5c56b 2px, transparent 3px);
+  background-size: 20px 20px;
+}
+
+/* Decorative zigzag (right) */
+.blog-hero__bg::after {
+  content: "∿∿∿";
+  position: absolute;
+  right: 6%;
+  top: 20%;
+  font-size: 2.2rem;
+  color: #f5c56b;
+}
+
+/* ===== CONTENT ===== */
+.blog-hero__content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.blog-hero__title {
+  color: #f7d08a;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* ===== SEARCH ===== */
+.blog-search {
+  position: relative;
+  max-width: 650px;
+  margin: auto;
+}
+
+.blog-search input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #4a2b6d;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.blog-search input::placeholder {
+  color: #ddd;
+}
+
+.blog-search__icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/* ===== FILTER BUTTONS ===== */
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 1rem;
+}
+
+.filter {
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  border: 1.5px solid #2e1462;
+  background: #fff;
+  color: #2e1462;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter:hover,
+.filter:focus {
+  background: #2e1462;
+  color: #fff;
+}
+
+.filter--active {
+  background: linear-gradient(180deg, #2e1462, #0c0528);
+  color: #fff;
+  border: none;
+}

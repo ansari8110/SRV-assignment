@@ -22,3 +22,134 @@ body {
   text-align: center;
   margin: 3rem 0 1.5rem;
 }
+
+
+.blogs {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 10rem;
+  font-family: system-ui, sans-serif;
+}
+
+/* ===== FEATURED BLOG ===== */
+.blog-featured {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  background: #ead9ff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.blog-featured__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-featured__content {
+  padding: 2rem;
+}
+
+.blog-featured__title {
+  font-size: 1.4rem;
+  color: #2d0c4f;
+  margin-bottom: 0.8rem;
+}
+
+.blog-featured__meta {
+  font-size: 0.85rem;
+  color: #6b4b8b;
+  margin-bottom: 1rem;
+}
+
+.blog-featured__desc {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== BUTTON ===== */
+.btn--read {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(180deg, #3b145f, #0c0528);
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== LATEST BLOGS ===== */
+.blogs__heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2d0c4f;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1em;
+}
+
+/* ===== BLOG CARD ===== */
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-card__content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-card__author {
+  font-size: 0.8rem;
+  color: #6b4b8b;
+  margin-bottom: 0.4rem;
+}
+
+.blog-card h3 {
+  font-size: 1rem;
+  color: #2d0c4f;
+  margin-bottom: 0.6rem;
+}
+
+.blog-card__meta {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.6rem;
+}
+
+.blog-card__desc {
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .blog-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-featured__image {
+    height: 220px;
+  }
+}

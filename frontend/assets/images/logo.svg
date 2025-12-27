@@ -1,0 +1,91 @@
+<svg
+  width="80"
+  height="60"
+  viewBox="0 0 420 300"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Premier Schools Exhibition Logo"
+>
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E5AA7"/>
+      <stop offset="100%" stop-color="#0B3F7A"/>
+    </linearGradient>
+  </defs>
+
+  <rect
+    x="20"
+    y="20"
+    rx="24"
+    ry="24"
+    width="380"
+    height="260"
+    fill="url(#bgGrad)"
+    stroke="#FFFFFF"
+    stroke-width="6"
+  />
+
+  <!-- 22nd Edition Tag -->
+  <rect
+    x="36"
+    y="32"
+    rx="8"
+    ry="8"
+    width="120"
+    height="32"
+    fill="#F6C000"
+  />
+  <text
+    x="96"
+    y="54"
+    text-anchor="middle"
+    font-size="14"
+    font-weight="700"
+    fill="#000"
+    font-family="Arial, Helvetica, sans-serif"
+  >
+    22nd EDITION
+  </text>
+
+  <!-- Premier Schools Text -->
+  <text
+    x="210"
+    y="140"
+    text-anchor="middle"
+    font-size="42"
+    font-weight="800"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+  >
+    Premier Schools
+  </text>
+
+  <!-- Exhibition Text -->
+  <text
+    x="210"
+    y="190"
+    text-anchor="middle"
+    font-size="44"
+    font-weight="900"
+    fill="#F6C000"
+    font-family="Arial, Helvetica, sans-serif"
+  >
+    Exhibition
+  </text>
+
+  <!-- Small top-right mark (approx logo block) -->
+  <rect
+    x="330"
+    y="32"
+    rx="6"
+    ry="6"
+    width="50"
+    height="50"
+    fill="#E51C23"
+  />
+  <path
+    d="M345 65 L355 35 L365 65 Z"
+    fill="#FFFFFF"
+  />
+</svg>

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
 
 <body>
@@ -27,47 +28,218 @@
 <!-- HERO SECTION -->
 <section class="hero" aria-roledescription="carousel">
   <div class="hero__track">
+    <section class="blog-hero" aria-labelledby="blog-title">
+        <div class="blog-hero__bg">
+            <div class="blog-hero__content">
+            <h2 id="blog-title" class="blog-hero__title">
+                Read Our Latest Blogs
+            </h2>
 
-    <article class="hero__slide is-active">
-      <div class="hero__content">
-        <h1 class="hero__title">Premier Schools Exhibition</h1>
-        <p class="hero__subtitle">Find the right school for your child</p>
-        <button class="btn btn--secondary">Book a Slot</button>
-      </div>
-      <img src="assets/images/hero-1.jpg" alt="" class="hero__image" />
-    </article>
+            <form class="blog-search" role="search">
+                <label for="blog-search-input" class="sr-only">
+                Search latest blogs
+                </label>
+                <span class="blog-search__icon" aria-hidden="true">🔍</span>
+                <input
+                id="blog-search-input"
+                type="search"
+                placeholder="Search for latest blogs..."
+                />
+            </form>
+            </div>
+        </div>
 
-    <article class="hero__slide">
-      <div class="hero__content">
-        <h2 class="hero__title">Meet Top Schools</h2>
-        <p class="hero__subtitle">One-on-one with school leaders</p>
-      </div>
-      <img src="assets/images/hero-2.jpg" alt="" class="hero__image" />
-    </article>
-
-  </div>
-
+        <div class="blog-filters">
+            <button class="filter filter--active">All Specialisations</button>
+            <button class="filter">Education</button>
+            <button class="filter">Lessons</button>
+            <button class="filter">Teachers</button>
+            <button class="filter">Music</button>
+            <button class="filter">Online Course</button>
+            <button class="filter">Programming</button>
+            <button class="filter">More</button>
+        </div>
+    </section>
+</div>
+<!-- 
   <div class="hero__controls">
     <button class="hero__btn" aria-label="Previous slide">‹</button>
     <button class="hero__btn" aria-label="Pause slideshow">❚❚</button>
     <button class="hero__btn" aria-label="Next slide">›</button>
-  </div>
+  </div> -->
 </section>
 
-<!-- PARTICIPATING SCHOOLS -->
-<section class="schools">
-  <h2 class="section-title">Participating Schools</h2>
+<section class="blogs">
+  <!-- FEATURED BLOG -->
+  <article class="blog-featured">
+    <img
+      src="assets/images/logo1.png"
+      alt="Students celebrating graduation"
+      class="blog-featured__image"
+    />
 
-  <div class="schools__sling" role="list">
-    <div class="schools__logo" role="listitem">
-      <img src="assets/images/school-1.png" alt="School One">
+    <div class="blog-featured__content">
+      <h3 class="blog-featured__title">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </h3>
+
+      <p class="blog-featured__meta">
+        By Pritam Rathi &nbsp;•&nbsp; 2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+      </p>
+
+      <p class="blog-featured__desc">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      </p>
+
+       <a href="#" class="btn btn--read">
+        READ MORE <span aria-hidden="true">↗</span>
+      </a>
     </div>
-    <div class="schools__logo" role="listitem">
-      <img src="assets/images/school-2.png" alt="School Two">
+  </article>
+
+  <!-- LATEST BLOGS -->
+  <h2 class="blogs__heading">Latest Blogs</h2>
+  <div class="blogs-grid">
+    <article class="blog-card">
+      <img src="assets/images/blog-1.png" alt="Child learning with toys" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+          <a href="#" class="btn btn--read">
+        READ MORE <span aria-hidden="true">↗</span>
+      </a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="assets/images/blog-2.png" alt="Student smiling in school corridor" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="assets/images/blog-3.png" alt="Group of school children smiling" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
     </div>
-    <div class="schools__logo" role="listitem">
-      <img src="assets/images/school-3.png" alt="School Three">
-    </div>
+
+    <h2 class="blogs__heading">All Blogs</h2>
+    <div class="blogs-grid">
+    <article class="blog-card">
+      <img src="assets/images/blog-4.png" alt="Group of school children smiling" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="assets/images/blog-5.png" alt="Group of school children smiling" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="assets/images/blog-6.png" alt="Group of school children smiling" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="assets/images/blog-7.png" alt="Group of school children smiling" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="assets/images/blog-8.png" alt="Group of school children smiling" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="assets/images/blog-9.png" alt="Group of school children smiling" />
+      <div class="blog-card__content">
+        <p class="blog-card__author">By Pritam Rathi</p>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+        <p class="blog-card__meta">
+          2ND MAY 2025 &nbsp;|&nbsp; 6 min read
+        </p>
+        <p class="blog-card__desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        
+      </div>
+    </article>
   </div>
 </section>
 
@@ -116,9 +288,73 @@
 </section>
 
 </main>
+  <footer class="site-footer" role="contentinfo">
+  <div class="footer-top">
+    <!-- Logo -->
+    <div class="footer-brand">
+      <img
+        src="assets/images/logo.svg"
+        alt="Premier Schools Exhibition Logo"
+        class="footer-brand__logo"
+      />
+    </div>
 
-<footer class="footer">
-  <p>© 2025 Premier Schools Exhibition</p>
+    <!-- Corporate Office -->
+    <div class="footer-block">
+      <div class="footer-block__icon">📍</div>
+      <div class="footer-block__content">
+        <h4>Corporate Office:</h4>
+        <p>
+          Suite B-5, Ballygunge Park Tower,<br>
+          67B Ballygunge Circular Road,<br>
+          Kolkata - 700019
+        </p>
+      </div>
+    </div>
+
+    <!-- Ahmedabad Office -->
+    <div class="footer-block">
+      <div class="footer-block__icon">📍</div>
+      <div class="footer-block__content">
+        <h4>Ahmedabad Office:</h4>
+        <p>
+          12/AA, Swastik Chambers, Near CU Shah College,<br>
+          Ashram Road,<br>
+          Ahmedabad - 380009
+        </p>
+      </div>
+    </div>
+
+    <!-- Call Us -->
+    <div class="footer-block">
+      <div class="footer-block__icon">📞</div>
+      <div class="footer-block__content">
+        <h4>Call us on</h4>
+        <p>
+          <a href="tel:9674805912">9674805912</a><br>
+          <a href="tel:9674585012">9674585012</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h4>Follow us on</h4>
+      <div class="footer-social__icons">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="YouTube">▶️</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>
+      Copyright © 2025 | All rights reserved.
+      Premier Schools Exhibition
+    </p>
+  </div>
 </footer>
 
 <script src="js/hero-slider.js"></script>
