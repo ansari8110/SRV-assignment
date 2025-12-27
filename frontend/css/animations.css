@@ -1,0 +1,20 @@
+.schools__sling {
+  animation: sling 40s linear infinite;
+}
+
+.schools__sling:hover,
+.schools__sling:focus-within {
+  animation-play-state: paused;
+}
+
+@keyframes sling {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+  }
+}

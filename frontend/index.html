@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Premier Schools Exhibition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="header" role="banner">
+  <nav class="header__nav" aria-label="Primary navigation">
+    <img src="assets/images/logo.svg" alt="Premier Schools Exhibition" class="header__logo" />
+    <button class="btn btn--primary">Register Now</button>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO SECTION -->
+<section class="hero" aria-roledescription="carousel">
+  <div class="hero__track">
+
+    <article class="hero__slide is-active">
+      <div class="hero__content">
+        <h1 class="hero__title">Premier Schools Exhibition</h1>
+        <p class="hero__subtitle">Find the right school for your child</p>
+        <button class="btn btn--secondary">Book a Slot</button>
+      </div>
+      <img src="assets/images/hero-1.jpg" alt="" class="hero__image" />
+    </article>
+
+    <article class="hero__slide">
+      <div class="hero__content">
+        <h2 class="hero__title">Meet Top Schools</h2>
+        <p class="hero__subtitle">One-on-one with school leaders</p>
+      </div>
+      <img src="assets/images/hero-2.jpg" alt="" class="hero__image" />
+    </article>
+
+  </div>
+
+  <div class="hero__controls">
+    <button class="hero__btn" aria-label="Previous slide">‹</button>
+    <button class="hero__btn" aria-label="Pause slideshow">❚❚</button>
+    <button class="hero__btn" aria-label="Next slide">›</button>
+  </div>
+</section>
+
+<!-- PARTICIPATING SCHOOLS -->
+<section class="schools">
+  <h2 class="section-title">Participating Schools</h2>
+
+  <div class="schools__sling" role="list">
+    <div class="schools__logo" role="listitem">
+      <img src="assets/images/school-1.png" alt="School One">
+    </div>
+    <div class="schools__logo" role="listitem">
+      <img src="assets/images/school-2.png" alt="School Two">
+    </div>
+    <div class="schools__logo" role="listitem">
+      <img src="assets/images/school-3.png" alt="School Three">
+    </div>
+  </div>
+</section>
+
+<!-- CHOOSE SCHOOL -->
+<section class="choose">
+  <h2 class="section-title">Choose the School</h2>
+
+  <div class="choose__grid">
+    <article class="choose__card">
+      <h3>CBSE</h3>
+      <p>National curriculum</p>
+    </article>
+    <article class="choose__card">
+      <h3>ICSE</h3>
+      <p>Strong academics</p>
+    </article>
+    <article class="choose__card">
+      <h3>IB</h3>
+      <p>Global exposure</p>
+    </article>
+    <article class="choose__card">
+      <h3>Cambridge</h3>
+      <p>International standards</p>
+    </article>
+  </div>
+</section>
+
+<!-- EXHIBITION HIGHLIGHTS -->
+<section class="highlights" aria-roledescription="carousel">
+  <h2 class="section-title">Exhibition Highlights</h2>
+
+  <div class="highlights__slider">
+    <article class="highlights__card">
+      <h3>Meet Principals</h3>
+      <p>Direct interaction</p>
+    </article>
+    <article class="highlights__card">
+      <h3>Compare Schools</h3>
+      <p>All under one roof</p>
+    </article>
+    <article class="highlights__card">
+      <h3>Admissions Guidance</h3>
+      <p>Expert counselling</p>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2025 Premier Schools Exhibition</p>
+</footer>
+
+<script src="js/hero-slider.js"></script>
+<script src="js/section-slider.js"></script>
+<script src="js/logo-sling.js"></script>
+<script src="js/accessibility.js"></script>
+</body>
+</html>
